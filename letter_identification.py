@@ -1,0 +1,7 @@
+a = set(input('Enter first word: ').rstrip().lower())
+b = set(input('Enter second word: ').rstrip().lower())
+c = set(input('Enter third word: ').rstrip().lower())
+print(sorted(a & b & c))
+print(sorted((a & b) - c))
+print(sorted(a - (b | c)))
+print(sorted(a | b | c))
